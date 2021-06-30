@@ -236,7 +236,7 @@ class AuthProvider with ChangeNotifier {
           (await _firebaseAuth.signInAnonymously()).user;
 
       changeUserId = _loginUser?.uid;
-      print(_userId);
+      print("_userId:$_userId");
     } catch (e) {}
   }
 
@@ -260,6 +260,8 @@ class AuthProvider with ChangeNotifier {
   Future<void>? logOut() async {
     final sharedPrefs = await SharedPreferences.getInstance();
     await _firebaseAuth.signOut();
+    changeUserId = null;
+    print("userid: $userId");
   }
 
   /// Generates a cryptographically secure random nonce, to be included in a
@@ -279,7 +281,7 @@ class AuthProvider with ChangeNotifier {
     return digest.toString();
   }
 
-  Future<UserCredential> signInWithApple() async {
+  Future<void> signInWithApple() async {
     // To prevent replay attacks with the credential returned from Apple, we
     // include a nonce in the credential request. When signing in with
     // Firebase, the nonce in the id token returned by Apple, is expected to
@@ -304,10 +306,14 @@ class AuthProvider with ChangeNotifier {
 
     // Sign in the user with Firebase. If the nonce we generated earlier does
     // not match the nonce in `appleCredential.identityToken`, sign in will fail.
-    return await FirebaseAuth.instance.signInWithCredential(oauthCredential);
+    UserCredential userCredential =
+        await FirebaseAuth.instance.signInWithCredential(oauthCredential);
+
+    changeUserId = userCredential.user?.uid;
+    print("by apple signin-uid:$userId");
   }
 
-  Future<UserCredential> signInWithGoogle() async {
+  Future<void> signInWithGoogle() async {
     // Trigger the authentication flow
     final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
 
@@ -322,7 +328,12 @@ class AuthProvider with ChangeNotifier {
     );
 
     // Once signed in, return the UserCredential
-    return await FirebaseAuth.instance.signInWithCredential(credential);
+
+    UserCredential userCredential =
+        await FirebaseAuth.instance.signInWithCredential(credential);
+
+    changeUserId = userCredential.user?.uid;
+    print("by google signin-uid:$userId");
   }
 
   Future callLoginFunction() async {

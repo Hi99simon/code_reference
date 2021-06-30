@@ -1,3 +1,5 @@
+import 'dart:io' show Platform;
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/services.dart';
@@ -129,7 +131,10 @@ class _AuthLoginScreenState extends State<AuthLoginScreen> {
                     ? Column(
                         children: [
                           SizedBox(height: 16.0),
-                          SigninAppleButton(),
+                          //no apple sign in in android
+                          Platform.isAndroid
+                              ? Container()
+                              : SigninAppleButton(),
                           SizedBox(height: 16.0),
                           SigninGoogleButton(),
                         ],
@@ -234,6 +239,7 @@ class _AuthLoginScreenState extends State<AuthLoginScreen> {
                 TextButton(
                     onPressed: () async {
                       setState(() {
+                        HapticFeedback.selectionClick();
                         showEmailPw = !showEmailPw;
                       });
                     },
@@ -275,26 +281,9 @@ class _AuthLoginScreenState extends State<AuthLoginScreen> {
                     ),
                   ),
                 ),
-                // TextButton(
-                //     onPressed: () async {
-                //       // FirebaseAuth.instance.signInAnonymously();
-
-                //       // authProvider.emailLogin(
-                //       //     context, "simon@starifly.hk", "simon@1202");
-                //       await authProviderFalse.logOut();
-                //       print(FirebaseAuth.instance.currentUser?.uid);
-                //     },
-                //     child: Text("Signout")),
-                // TextButton(
-                //     onPressed: () async {
-                //       // FirebaseAuth.instance.signInAnonymously();
-
-                //       // authProvider.emailLogin(
-                //       //     context, "simon@starifly.hk", "simon@1202");
-                //       // await authProvider.logOut();
-                //       print(FirebaseAuth.instance.currentUser?.uid);
-                //     },
-                //     child: Text("check uid")),
+                SizedBox(
+                  height: 120,
+                ),
               ],
             ),
           ),

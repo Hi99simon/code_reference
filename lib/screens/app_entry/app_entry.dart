@@ -8,6 +8,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:official_starifly/screens/app_entry/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 class AppEntry extends StatefulWidget {
@@ -75,7 +76,7 @@ class _AppEntryState extends State<AppEntry> {
         darkTheme: themeChanger.fontFamily == "default"
             ? customDarkThemeNormalFont
             : customDarkTheme,
-        home: InitApp(),
+        home: SplashScreen(),
         navigatorObservers: [
           FirebaseAnalyticsObserver(analytics: analytics),
         ],
