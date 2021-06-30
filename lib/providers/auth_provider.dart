@@ -229,7 +229,7 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void>? emailLogin(BuildContext context, String _userLoginEmailInput,
+  Future<void> emailLogin(BuildContext context, String _userLoginEmailInput,
       String _userLoginPasswordInput) async {
     final sharedPrefs = await SharedPreferences.getInstance();
     try {

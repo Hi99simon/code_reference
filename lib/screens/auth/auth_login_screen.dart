@@ -36,6 +36,14 @@ class _AuthLoginScreenState extends State<AuthLoginScreen> {
   bool showEmailPw = false;
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    authLoginEmailController.dispose();
+    authLoginPasswordController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
@@ -154,7 +162,15 @@ class _AuthLoginScreenState extends State<AuthLoginScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 16.0),
                         child: EmailPwLoginButton(
                           text: S().loginAppBarTitle,
-                          function: () async {},
+                          function: () async {
+                            authProvider.emailLogin(
+                              context,
+                              authLoginEmailController.text,
+                              authLoginPasswordController.text,
+                            );
+                            authLoginEmailController.clear();
+                            authLoginPasswordController.clear();
+                          },
                         ),
                       ),
                     ],

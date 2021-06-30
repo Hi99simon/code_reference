@@ -134,8 +134,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "agreeandpaystarcoin":
             MessageLookupByLibrary.simpleMessage("Agree and Pay Starcoin"),
         "alconfirm": MessageLookupByLibrary.simpleMessage("Login"),
-        "alemail": MessageLookupByLibrary.simpleMessage("Enter Email"),
-        "alforgot": MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "alemail": MessageLookupByLibrary.simpleMessage("Enter email"),
+        "alforgot": MessageLookupByLibrary.simpleMessage("Forgot password?"),
         "algoreg": MessageLookupByLibrary.simpleMessage("Register"),
         "alignqrcodewithframe": MessageLookupByLibrary.simpleMessage(
             "Align the QR code within the frame to scan"),
@@ -147,7 +147,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "allpurchaserecord":
             MessageLookupByLibrary.simpleMessage("All Purchase Record"),
         "alnoactext": MessageLookupByLibrary.simpleMessage("Need an account? "),
-        "alpw": MessageLookupByLibrary.simpleMessage("Enter Password"),
+        "alpw": MessageLookupByLibrary.simpleMessage("Enter password"),
         "alreadymanydrafts": m3,
         "alreadymanydraftsdoby": m4,
         "alreadysentpw": MessageLookupByLibrary.simpleMessage(
@@ -620,8 +620,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "limitDuration":
             MessageLookupByLibrary.simpleMessage("Limited Access Duration"),
         "loading": MessageLookupByLibrary.simpleMessage("Loading"),
-        "loginAppBarTitle":
-            MessageLookupByLibrary.simpleMessage("Login STARIFLY"),
+        "loginAppBarTitle": MessageLookupByLibrary.simpleMessage("Login"),
         "loginwithemailpw": MessageLookupByLibrary.simpleMessage(
             "Login with email and password"),
         "loginwithsocial":

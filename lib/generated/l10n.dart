@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `Login STARIFLY`
+  /// `Login`
   String get loginAppBarTitle {
     return Intl.message(
-      'Login STARIFLY',
+      'Login',
       name: 'loginAppBarTitle',
       desc: '',
       args: [],
@@ -460,30 +460,30 @@ class S {
     );
   }
 
-  /// `Enter Email`
+  /// `Enter email`
   String get alemail {
     return Intl.message(
-      'Enter Email',
+      'Enter email',
       name: 'alemail',
       desc: '',
       args: [],
     );
   }
 
-  /// `Enter Password`
+  /// `Enter password`
   String get alpw {
     return Intl.message(
-      'Enter Password',
+      'Enter password',
       name: 'alpw',
       desc: '',
       args: [],
     );
   }
 
-  /// `Forgot Password?`
+  /// `Forgot password?`
   String get alforgot {
     return Intl.message(
-      'Forgot Password?',
+      'Forgot password?',
       name: 'alforgot',
       desc: '',
       args: [],

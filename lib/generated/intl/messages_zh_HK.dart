@@ -491,7 +491,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "likesum": MessageLookupByLibrary.simpleMessage("累積心心"),
         "limitDuration": MessageLookupByLibrary.simpleMessage("存取期限"),
         "loading": MessageLookupByLibrary.simpleMessage("加載中"),
-        "loginAppBarTitle": MessageLookupByLibrary.simpleMessage("登入 STARIFLY"),
+        "loginAppBarTitle": MessageLookupByLibrary.simpleMessage("登入"),
         "loginwithemailpw": MessageLookupByLibrary.simpleMessage("以電郵方式登入"),
         "loginwithsocial": MessageLookupByLibrary.simpleMessage("以社交帳戶登入"),
         "mainfolder": MessageLookupByLibrary.simpleMessage("主媒體庫"),

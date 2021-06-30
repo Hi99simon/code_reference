@@ -67,8 +67,7 @@ class _AuthTopBarState extends State<AuthTopBar> {
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
-                              horizontal: 8.0,
-                            ),
+                                horizontal: 8.0, vertical: 8.0),
                             child: CustomText(
                               text: "中",
                               darkColor: kWhiteTextColor,
@@ -77,12 +76,11 @@ class _AuthTopBarState extends State<AuthTopBar> {
                           ),
                         ),
                       )
-                    : InkWell(
+                    : GestureDetector(
                         onTap: widget.changeEnglish,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 8.0,
-                          ),
+                              horizontal: 8.0, vertical: 8.0),
                           child: Center(
                             child: CustomText(
                                 text: "EN",
