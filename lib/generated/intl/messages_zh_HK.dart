@@ -306,6 +306,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "currentaccountbalance": MessageLookupByLibrary.simpleMessage("帳戶星幣結存"),
         "currentbalance": MessageLookupByLibrary.simpleMessage("可提取金額"),
         "currentpreview": MessageLookupByLibrary.simpleMessage("正在檢視"),
+        "dataprotectbyprivacyrule1":
+            MessageLookupByLibrary.simpleMessage("你的資料受"),
+        "dataprotectbyprivacyrule2":
+            MessageLookupByLibrary.simpleMessage(" 私隱條款 "),
+        "dataprotectbyprivacyrule3": MessageLookupByLibrary.simpleMessage("保障"),
         "dayago": m9,
         "daysafterregister": m10,
         "defaultcolor": MessageLookupByLibrary.simpleMessage("預設"),
@@ -855,6 +860,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("未能發送重設密碼電郵"),
         "unblockuser": MessageLookupByLibrary.simpleMessage("解鎖用戶"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("尚未確認"),
+        "understandtermsbysignin1":
+            MessageLookupByLibrary.simpleMessage("登入即表示你已同意STARIFLY的"),
+        "understandtermsbysignin2":
+            MessageLookupByLibrary.simpleMessage(" 使用條款 "),
         "undo": MessageLookupByLibrary.simpleMessage("回復"),
         "unit": m31,
         "unitaudio": MessageLookupByLibrary.simpleMessage("教學音訊"),

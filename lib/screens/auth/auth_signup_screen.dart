@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 
-class AuthSignupScreen extends StatefulWidget {
-  const AuthSignupScreen({Key? key}) : super(key: key);
+class SignUpMasterScreen extends StatefulWidget {
+  final String? signupEmailInput;
+  const SignUpMasterScreen({Key? key, this.signupEmailInput}) : super(key: key);
 
   @override
-  _AuthSignupScreenState createState() => _AuthSignupScreenState();
+  _SignUpMasterScreenState createState() => _SignUpMasterScreenState();
 }
 
-class _AuthSignupScreenState extends State<AuthSignupScreen> {
+class _SignUpMasterScreenState extends State<SignUpMasterScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("register"),
+      ),
+    );
   }
 }

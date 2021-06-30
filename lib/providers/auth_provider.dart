@@ -7,6 +7,7 @@ import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:official_starifly/generated/l10n.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_auth/firebase_auth.dart' as firebaseAuth;
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
@@ -229,6 +230,16 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> signinAnonymous() async {
+    try {
+      firebaseAuth.User? _loginUser =
+          (await _firebaseAuth.signInAnonymously()).user;
+
+      changeUserId = _loginUser?.uid;
+      print(_userId);
+    } catch (e) {}
+  }
+
   Future<void> emailLogin(BuildContext context, String _userLoginEmailInput,
       String _userLoginPasswordInput) async {
     final sharedPrefs = await SharedPreferences.getInstance();
@@ -322,6 +333,46 @@ class AuthProvider with ChangeNotifier {
       print("auth call login ${result.data['response']}");
     } catch (e) {
       print('auth provider -callLoginFunction:$e');
+    }
+  }
+
+  Future<void> forgotPw(String _forgotPwEmailInput) async {
+    try {
+      await _firebaseAuth.sendPasswordResetEmail(email: _forgotPwEmailInput);
+      print("sent reset email");
+    } catch (geterror) {
+      String errorMessage;
+      print("error from login function: $geterror");
+      //todo: switch error.code
+      switch (geterror) {
+        case "ERROR_INVALID_EMAIL":
+        case "invalid-email":
+          errorMessage = S().invalidemail;
+          break;
+        case "ERROR_USER_DISABLED":
+        case "user-disabled":
+          errorMessage = S().emailuserdisabled;
+          break;
+        case "ERROR_TOO_MANY_REQUESTS":
+        case "too-many-requests":
+          errorMessage = S().emailoverrequest;
+          break;
+        case "ERROR_OPERATION_NOT_ALLOWED":
+        case "operation-not-allowed":
+          errorMessage = S().emailnotallow;
+          break;
+        case "email-already-in-use":
+          errorMessage = S().emailalreadyused;
+          break;
+        case "weak-password":
+          errorMessage = S().emailweakpassword;
+          break;
+
+        default:
+          errorMessage = S().unabletosendresetpw;
+      }
+
+      return Future.error(errorMessage);
     }
   }
 }

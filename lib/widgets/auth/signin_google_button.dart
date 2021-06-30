@@ -14,40 +14,46 @@ class SigninGoogleButton extends StatefulWidget {
 class _SigninGoogleButtonState extends State<SigninGoogleButton> {
   @override
   Widget build(BuildContext context) {
-    final authProvider = Provider.of<AuthProvider>(context);
+    final authProviderFalse = Provider.of<AuthProvider>(context, listen: false);
     final themeMode = Provider.of<ThemeChanger>(context).themeMode;
     return InkWell(
       onTap: () {
-        authProvider.signInWithGoogle();
+        authProviderFalse.signInWithGoogle();
       },
-      child: Container(
-        decoration: BoxDecoration(
-          color: themeMode == ThemeMode.dark ? Colors.white : Colors.white,
-          borderRadius: BorderRadius.circular(4.0),
-          border: Border.all(color: Colors.black),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 18.0),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Image.asset(
-                "assets/google_logo.png",
-                height: 16,
-              ),
-              SizedBox(
-                width: 8.0,
-              ),
-              Text(
-                S().signinwithgoogle,
-                style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    color: themeMode == ThemeMode.dark
-                        ? Colors.black
-                        : Colors.black,
-                    fontSize: 16),
-              ),
-            ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            color: themeMode == ThemeMode.dark ? Colors.white : Colors.white,
+            borderRadius: BorderRadius.circular(4.0),
+            border: Border.all(color: Colors.black),
+          ),
+          child: Padding(
+            padding:
+                const EdgeInsets.symmetric(vertical: 8.0, horizontal: 18.0),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(
+                  "assets/google_logo.png",
+                  height: 16,
+                ),
+                SizedBox(
+                  width: 8.0,
+                ),
+                Text(
+                  S().signinwithgoogle,
+                  style: TextStyle(
+                      fontWeight: FontWeight.normal,
+                      color: themeMode == ThemeMode.dark
+                          ? Colors.black
+                          : Colors.black,
+                      fontSize: 16),
+                ),
+              ],
+            ),
           ),
         ),
       ),

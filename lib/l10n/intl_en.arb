@@ -753,5 +753,10 @@
   "loginwithemailpw":"Login with email and password",
   "loginwithsocial":"Login with social accounts",
   "signinwithapple":"Sign in with Apple",
-  "signinwithgoogle":"Sign in with Google"
+  "signinwithgoogle":"Sign in with Google",
+  "understandtermsbysignin1":"By signing in, you agree to STARIFLY's ",
+  "understandtermsbysignin2":"Terms.",
+  "dataprotectbyprivacyrule1":"We protect your data with ",
+  "dataprotectbyprivacyrule2":"Privacy Policy",
+  "dataprotectbyprivacyrule3":"."
 }

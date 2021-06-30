@@ -385,6 +385,11 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Current Balance"),
         "currentpreview":
             MessageLookupByLibrary.simpleMessage("Current Preview"),
+        "dataprotectbyprivacyrule1":
+            MessageLookupByLibrary.simpleMessage("We protect your data with "),
+        "dataprotectbyprivacyrule2":
+            MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "dataprotectbyprivacyrule3": MessageLookupByLibrary.simpleMessage("."),
         "dayago": m9,
         "daysafterregister": m10,
         "defaultcolor": MessageLookupByLibrary.simpleMessage("Default"),
@@ -1080,6 +1085,10 @@ class MessageLookup extends MessageLookupByLibrary {
             "Unable to Send Reset Password Email, Try Again Later"),
         "unblockuser": MessageLookupByLibrary.simpleMessage("Unblock"),
         "unconfirmed": MessageLookupByLibrary.simpleMessage("Pending..."),
+        "understandtermsbysignin1": MessageLookupByLibrary.simpleMessage(
+            "By signing in, you agree to STARIFLY\'s "),
+        "understandtermsbysignin2":
+            MessageLookupByLibrary.simpleMessage("Terms."),
         "undo": MessageLookupByLibrary.simpleMessage("Undo"),
         "unit": m31,
         "unitaudio":

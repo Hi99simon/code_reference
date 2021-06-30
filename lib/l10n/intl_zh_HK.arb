@@ -752,5 +752,10 @@
   "loginwithemailpw":"以電郵方式登入",
   "loginwithsocial":"以社交帳戶登入",
   "signinwithapple":"透過 Apple 繼續",
-  "signinwithgoogle":"透過 Google 繼續"
+  "signinwithgoogle":"透過 Google 繼續",
+  "understandtermsbysignin1":"登入即表示你已同意STARIFLY的",
+  "understandtermsbysignin2":" 使用條款 ",
+  "dataprotectbyprivacyrule1":"你的資料受",
+  "dataprotectbyprivacyrule2":" 私隱條款 ",
+  "dataprotectbyprivacyrule3":"保障"
 }

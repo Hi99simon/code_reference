@@ -7589,6 +7589,56 @@ class S {
       args: [],
     );
   }
+
+  /// `By signing in, you agree to STARIFLY's `
+  String get understandtermsbysignin1 {
+    return Intl.message(
+      'By signing in, you agree to STARIFLY\'s ',
+      name: 'understandtermsbysignin1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms.`
+  String get understandtermsbysignin2 {
+    return Intl.message(
+      'Terms.',
+      name: 'understandtermsbysignin2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We protect your data with `
+  String get dataprotectbyprivacyrule1 {
+    return Intl.message(
+      'We protect your data with ',
+      name: 'dataprotectbyprivacyrule1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get dataprotectbyprivacyrule2 {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'dataprotectbyprivacyrule2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `.`
+  String get dataprotectbyprivacyrule3 {
+    return Intl.message(
+      '.',
+      name: 'dataprotectbyprivacyrule3',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
