@@ -749,5 +749,9 @@
   "nochineseemail": "No Registration For Chinese Email Address",
   "errorpleasetry": "Error Please Try Again",
   "alignqrcodewithframe":"Align the QR code within the frame to scan",
-  "recommendforyou":"Recommend For You"
+  "recommendforyou":"Recommend For You",
+  "loginwithemailpw":"Login with email and password",
+  "loginwithsocial":"Login with social accounts",
+  "signinwithapple":"Sign in with Apple",
+  "signinwithgoogle":"Sign in with Google"
 }

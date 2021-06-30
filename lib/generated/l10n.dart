@@ -7549,6 +7549,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Login with email and password`
+  String get loginwithemailpw {
+    return Intl.message(
+      'Login with email and password',
+      name: 'loginwithemailpw',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login with social accounts`
+  String get loginwithsocial {
+    return Intl.message(
+      'Login with social accounts',
+      name: 'loginwithsocial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in with Apple`
+  String get signinwithapple {
+    return Intl.message(
+      'Sign in with Apple',
+      name: 'signinwithapple',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in with Google`
+  String get signinwithgoogle {
+    return Intl.message(
+      'Sign in with Google',
+      name: 'signinwithgoogle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

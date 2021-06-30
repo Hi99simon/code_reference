@@ -622,6 +622,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "loading": MessageLookupByLibrary.simpleMessage("Loading"),
         "loginAppBarTitle":
             MessageLookupByLibrary.simpleMessage("Login STARIFLY"),
+        "loginwithemailpw": MessageLookupByLibrary.simpleMessage(
+            "Login with email and password"),
+        "loginwithsocial":
+            MessageLookupByLibrary.simpleMessage("Login with social accounts"),
         "mainfolder": MessageLookupByLibrary.simpleMessage("Main Folder"),
         "maintutor": MessageLookupByLibrary.simpleMessage("Main Creator"),
         "malformLink":
@@ -963,6 +967,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "showless": MessageLookupByLibrary.simpleMessage("Show less"),
         "showmore": MessageLookupByLibrary.simpleMessage("Show more"),
         "showpublicasm": MessageLookupByLibrary.simpleMessage("Pin This Asm"),
+        "signinwithapple":
+            MessageLookupByLibrary.simpleMessage("Sign in with Apple"),
+        "signinwithgoogle":
+            MessageLookupByLibrary.simpleMessage("Sign in with Google"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "skycolor": MessageLookupByLibrary.simpleMessage("Sky"),
         "sociallink": m28,

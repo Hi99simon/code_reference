@@ -492,6 +492,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "limitDuration": MessageLookupByLibrary.simpleMessage("存取期限"),
         "loading": MessageLookupByLibrary.simpleMessage("加載中"),
         "loginAppBarTitle": MessageLookupByLibrary.simpleMessage("登入 STARIFLY"),
+        "loginwithemailpw": MessageLookupByLibrary.simpleMessage("以電郵方式登入"),
+        "loginwithsocial": MessageLookupByLibrary.simpleMessage("以社交帳戶登入"),
         "mainfolder": MessageLookupByLibrary.simpleMessage("主媒體庫"),
         "maintutor": MessageLookupByLibrary.simpleMessage("主導師"),
         "malformLink": MessageLookupByLibrary.simpleMessage("此連結不能被打開"),
@@ -760,6 +762,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "showless": MessageLookupByLibrary.simpleMessage("概覽"),
         "showmore": MessageLookupByLibrary.simpleMessage("顯示更多"),
         "showpublicasm": MessageLookupByLibrary.simpleMessage("展示此作業"),
+        "signinwithapple": MessageLookupByLibrary.simpleMessage("透過 Apple 繼續"),
+        "signinwithgoogle":
+            MessageLookupByLibrary.simpleMessage("透過 Google 繼續"),
         "skip": MessageLookupByLibrary.simpleMessage("跳過"),
         "skycolor": MessageLookupByLibrary.simpleMessage("粉色天空"),
         "sociallink": m28,
