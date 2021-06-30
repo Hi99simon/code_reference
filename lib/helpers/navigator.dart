@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:official_starifly/screens/auth/auth_signup_screen.dart';
+import 'package:official_starifly/screens/auth/signup/auth_signup_screen.dart';
 import 'package:official_starifly/screens/home/homescreen_master.dart';
 
 navigateHomeScreenMaster({
