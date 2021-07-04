@@ -297,6 +297,9 @@ PODS:
   - Firebase/Messaging (8.0.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 8.0.0)
+  - Firebase/RemoteConfig (8.0.0):
+    - Firebase/CoreOnly
+    - FirebaseRemoteConfig (~> 8.0.0)
   - Firebase/Storage (8.0.0):
     - Firebase/CoreOnly
     - FirebaseStorage (~> 8.0.0)
@@ -323,10 +326,16 @@ PODS:
     - Firebase/Messaging (= 8.0.0)
     - firebase_core
     - Flutter
+  - firebase_remote_config (0.10.0-2):
+    - Firebase/RemoteConfig (= 8.0.0)
+    - firebase_core
+    - Flutter
   - firebase_storage (8.1.3):
     - Firebase/Storage (= 8.0.0)
     - firebase_core
     - Flutter
+  - FirebaseABTesting (8.2.0):
+    - FirebaseCore (~> 8.0)
   - FirebaseAnalytics (8.0.0):
     - FirebaseAnalytics/AdIdSupport (= 8.0.0)
     - FirebaseCore (~> 8.0)
@@ -403,11 +412,19 @@ PODS:
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Reachability (~> 7.4)
     - GoogleUtilities/UserDefaults (~> 7.4)
+  - FirebaseRemoteConfig (8.0.0):
+    - FirebaseABTesting (~> 8.0)
+    - FirebaseCore (~> 8.0)
+    - FirebaseInstallations (~> 8.0)
+    - GoogleUtilities/Environment (~> 7.4)
+    - "GoogleUtilities/NSData+zlib (~> 7.4)"
   - FirebaseStorage (8.0.0):
     - FirebaseCore (~> 8.0)
     - GTMSessionFetcher/Core (~> 1.5)
   - Flutter (1.0.0)
   - flutter_app_badger (0.0.1):
+    - Flutter
+  - flutter_beep (0.0.1):
     - Flutter
   - flutter_image_compress (0.0.1):
     - Flutter
@@ -577,9 +594,11 @@ DEPENDENCIES:
   - firebase_crashlytics (from `.symlinks/plugins/firebase_crashlytics/ios`)
   - firebase_dynamic_links (from `.symlinks/plugins/firebase_dynamic_links/ios`)
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
+  - firebase_remote_config (from `.symlinks/plugins/firebase_remote_config/ios`)
   - firebase_storage (from `.symlinks/plugins/firebase_storage/ios`)
   - Flutter (from `Flutter`)
   - flutter_app_badger (from `.symlinks/plugins/flutter_app_badger/ios`)
+  - flutter_beep (from `.symlinks/plugins/flutter_beep/ios`)
   - flutter_image_compress (from `.symlinks/plugins/flutter_image_compress/ios`)
   - flutter_inapp_purchase (from `.symlinks/plugins/flutter_inapp_purchase/ios`)
   - flutter_keyboard_visibility (from `.symlinks/plugins/flutter_keyboard_visibility/ios`)
@@ -609,6 +628,7 @@ SPEC REPOS:
     - DKImagePickerController
     - DKPhotoGallery
     - Firebase
+    - FirebaseABTesting
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseCore
@@ -619,6 +639,7 @@ SPEC REPOS:
     - FirebaseFunctions
     - FirebaseInstallations
     - FirebaseMessaging
+    - FirebaseRemoteConfig
     - FirebaseStorage
     - FMDB
     - GoogleAppMeasurement
@@ -669,12 +690,16 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_dynamic_links/ios"
   firebase_messaging:
     :path: ".symlinks/plugins/firebase_messaging/ios"
+  firebase_remote_config:
+    :path: ".symlinks/plugins/firebase_remote_config/ios"
   firebase_storage:
     :path: ".symlinks/plugins/firebase_storage/ios"
   Flutter:
     :path: Flutter
   flutter_app_badger:
     :path: ".symlinks/plugins/flutter_app_badger/ios"
+  flutter_beep:
+    :path: ".symlinks/plugins/flutter_beep/ios"
   flutter_image_compress:
     :path: ".symlinks/plugins/flutter_image_compress/ios"
   flutter_inapp_purchase:
@@ -735,7 +760,9 @@ SPEC CHECKSUMS:
   firebase_crashlytics: 1dad18971e1bac07bbd560c7a344df391a3a833c
   firebase_dynamic_links: ffeecb95f938c3a8d7fa5e91e808d1c6385a231d
   firebase_messaging: bdc64f21cd3e9e174164b1417530c723fd128958
+  firebase_remote_config: 6cf81266981ea8fe8cb3a7e01c8270b04e31f9d1
   firebase_storage: 1c82ef47319a51b82b216475b91a102bca2e66d0
+  FirebaseABTesting: 5f37131c5eceea579c471c915f7a0f8cad484d1f
   FirebaseAnalytics: dcb92c7c9ef4fa7ffac276e8f87bd4fc8c97f1b8
   FirebaseAuth: b8cd992fca5b53dc6eec09e873a3f375f000c5a1
   FirebaseCore: 3f09591d51292843e2a46f18358d60bf4e996255
@@ -746,9 +773,11 @@ SPEC CHECKSUMS:
   FirebaseFunctions: 57fedef9b8808b83be40e176bcb28aa2aa78cf92
   FirebaseInstallations: 7f31798a8198c354eadcb87176d2090b62edc187
   FirebaseMessaging: 1a33b4af3c8042ed6ddacb6c031894af2064bfab
+  FirebaseRemoteConfig: 055f6b5ba1751547596ded5032c4d5c6054ca501
   FirebaseStorage: 61bcd27880fa17362f68be67d3683d04bfd7b1c7
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
   flutter_app_badger: 65de4d6f0c34a891df49e6cfb8a1c0496426fa68
+  flutter_beep: 54fb393b22dfa0f0e4573c81b1c74dd71c4e5af8
   flutter_image_compress: 082f8daaf6c1b0c9fe798251c750ef0ecd98d7ae
   flutter_inapp_purchase: 5c6a1ac3f11b11d0c8c0321c0c41c1f05805e4c8
   flutter_keyboard_visibility: 0339d06371254c3eb25eeb90ba8d17dca8f9c069

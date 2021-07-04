@@ -52,6 +52,7 @@ class _AuthLoginScreenState extends State<AuthLoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: AuthTopBar(
           changeChinese: () {
             HapticFeedback.selectionClick();
