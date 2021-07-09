@@ -17,6 +17,7 @@ const editPost = require("./src/edit/edit_post");
 const editProduct = require("./src/edit/edit_product");
 const fetchVerticalCourseCards = require("./src/fetch/fetch_vertical_course_cards");
 const fetchHorizontalCourseCards = require("./src/fetch/fetch_horizontal_course_cards");
+const checkUserExist = require("./src/auth/check_user_exist");
 
 exports.signup = signup.signup;
 exports.login = login.login;
@@ -29,3 +30,4 @@ exports.fetchVerticalCourseCards =
   fetchVerticalCourseCards.fetchVerticalCourseCards;
 exports.fetchHorizontalCourseCards =
   fetchHorizontalCourseCards.fetchHorizontalCourseCards;
+exports.checkUserExist = checkUserExist.checkUserExist;

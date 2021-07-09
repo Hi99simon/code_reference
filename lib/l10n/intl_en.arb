@@ -1,7 +1,7 @@
 {
   "@@locale": "en",
   "appTitle": "STARIFLY",
-  "loginAppBarTitle": "Login STARIFLY",
+  "loginAppBarTitle": "Login",
   "profileMenuTitle": "Setting",
   "pmAppLanguageTitle": "App Language",
   "pmAppLanguageBodyText": "Please choose your language",
@@ -41,9 +41,9 @@
   "pmLogout": "Logout",
   "authloginwelcome": "Welcome Back",
   "authloginbody": "Login to share and learn!",
-  "alemail": "Enter Email",
-  "alpw": "Enter Password",
-  "alforgot": "Forgot Password?",
+  "alemail": "Enter email",
+  "alpw": "Enter password",
+  "alforgot": "Forgot password?",
   "alconfirm": "Login",
   "alnoactext": "Need an account? ",
   "algoreg": "Register",
@@ -749,5 +749,14 @@
   "nochineseemail": "No Registration For Chinese Email Address",
   "errorpleasetry": "Error Please Try Again",
   "alignqrcodewithframe":"Align the QR code within the frame to scan",
-  "recommendforyou":"Recommend For You"
+  "recommendforyou":"Recommend For You",
+  "loginwithemailpw":"Login with email and password",
+  "loginwithsocial":"Login with social accounts",
+  "signinwithapple":"Sign in with Apple",
+  "signinwithgoogle":"Sign in with Google",
+  "understandtermsbysignin1":"By signing in, you agree to STARIFLY's ",
+  "understandtermsbysignin2":"Terms.",
+  "dataprotectbyprivacyrule1":"We protect your data with ",
+  "dataprotectbyprivacyrule2":"Privacy Policy",
+  "dataprotectbyprivacyrule3":"."
 }

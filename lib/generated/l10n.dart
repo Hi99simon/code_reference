@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `Login STARIFLY`
+  /// `Login`
   String get loginAppBarTitle {
     return Intl.message(
-      'Login STARIFLY',
+      'Login',
       name: 'loginAppBarTitle',
       desc: '',
       args: [],
@@ -460,30 +460,30 @@ class S {
     );
   }
 
-  /// `Enter Email`
+  /// `Enter email`
   String get alemail {
     return Intl.message(
-      'Enter Email',
+      'Enter email',
       name: 'alemail',
       desc: '',
       args: [],
     );
   }
 
-  /// `Enter Password`
+  /// `Enter password`
   String get alpw {
     return Intl.message(
-      'Enter Password',
+      'Enter password',
       name: 'alpw',
       desc: '',
       args: [],
     );
   }
 
-  /// `Forgot Password?`
+  /// `Forgot password?`
   String get alforgot {
     return Intl.message(
-      'Forgot Password?',
+      'Forgot password?',
       name: 'alforgot',
       desc: '',
       args: [],
@@ -7545,6 +7545,96 @@ class S {
     return Intl.message(
       'Recommend For You',
       name: 'recommendforyou',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login with email and password`
+  String get loginwithemailpw {
+    return Intl.message(
+      'Login with email and password',
+      name: 'loginwithemailpw',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login with social accounts`
+  String get loginwithsocial {
+    return Intl.message(
+      'Login with social accounts',
+      name: 'loginwithsocial',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in with Apple`
+  String get signinwithapple {
+    return Intl.message(
+      'Sign in with Apple',
+      name: 'signinwithapple',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign in with Google`
+  String get signinwithgoogle {
+    return Intl.message(
+      'Sign in with Google',
+      name: 'signinwithgoogle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By signing in, you agree to STARIFLY's `
+  String get understandtermsbysignin1 {
+    return Intl.message(
+      'By signing in, you agree to STARIFLY\'s ',
+      name: 'understandtermsbysignin1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms.`
+  String get understandtermsbysignin2 {
+    return Intl.message(
+      'Terms.',
+      name: 'understandtermsbysignin2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We protect your data with `
+  String get dataprotectbyprivacyrule1 {
+    return Intl.message(
+      'We protect your data with ',
+      name: 'dataprotectbyprivacyrule1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get dataprotectbyprivacyrule2 {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'dataprotectbyprivacyrule2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `.`
+  String get dataprotectbyprivacyrule3 {
+    return Intl.message(
+      '.',
+      name: 'dataprotectbyprivacyrule3',
       desc: '',
       args: [],
     );
